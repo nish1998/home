@@ -95,15 +95,14 @@ li:hover{
 	border-style: solid;
 	border-width: 20px;
 	border-color: rgba(0, 179, 60,0.4);
-	display: block;
+	
     background: rgba(256,256,256,0.7);
     position: relative;
-    margin-top: 250px;
-    margin-left: 400px;
+    width:70%;
     
-    width: 40%;
-    height: 40%;
-    transform: translate( -50%, -50% );
+   
+    
+    
     
     text-align: center;
     
@@ -114,6 +113,9 @@ li:hover{
     animation-duration: 1s;
     animation-timing-function: ease-out;
 
+     }
+     #myself{
+     	float:left;
      }
 
       .myself:hover{
@@ -138,10 +140,10 @@ li:hover{
 }
  
  @keyframes dropdown {
-    0%   {margin-top:250px; opacity: 1; }
-    0.0000000000000000000001%   {margin-top:200px; opacity: 0; }
+    0%   {margin-top:0px; opacity: 1; }
+    0.0000000000000000000001%   {margin-top:-50px; opacity: 0; }
     
-    100%  {margin-top:250px; opacity: 1;}
+    100%  {margin-top:0px; opacity: 1;}
   }
 
 
@@ -153,29 +155,70 @@ li:hover{
   }
 
 
+#container{
+	width: 1350px;
+	margin: 0px auto;
+}
+
+@media screen and (max-width: 1349px){
+	#container{
+		width:100%;
+	}
+	#myself
+	{
+		width:100%;
+	}
+	
+}
+
+@media screen and (max-width: 640px){
+	#container{
+		width:100%;
+	}
+	
+	#myself
+	{
+		width:100%;
+	}
+	
+}
+@media screen and (max-width: 320px){
+	#container{
+		width:320px;
+	}
   
 
 </style>
 
 
 <body>
+<div id="container">
 <div class="nav">
 <ul>
   <a href="https://nish1998.github.io/home/"><li id="home">HOME</li></a>
-<a href="https://nish1998.github.io/aboutme/"><li>ABOUT</li></a>
-<a href="https://nish1998.github.io/works/index.html"><li>WORKS</li></a>
-<a href="https://nish1998.github.io/contact/"><li>CONTACT</li></a>
+<a href="https://nish1998.github.io/aboutme/"><li >ABOUT</li></a>
+<a href="https://nish1998.github.io/works/"><li >WORKS</li></a>
+<a href="https://nish1998.github.io/contact/index.html" ><li >CONTACT</li></a>
 </ul>
 </div>
+<br>
+<br>
+<br>
+<br>
 
 <div class="myself">
+<div id="myself">
 	I am a collection of water, calcium and organic molecules, but not a single one of the cells that compose me knows who I am or cares. So why should you?
-</div>
+</div></div>
+<br>
+<br>
+<br>
+<div id="blank"></div>
 <div class="footer">
 <h4 style="color:#333; font-family:lato;"><i class="fa fa-copyright"></i> Nishant Thakur Webdesigns</h4>
 </div>
 
-
+</div>
 
 
 
